@@ -1,17 +1,16 @@
 #ifndef ASNCODEC
 
 typedef struct SequenceEncoder {
-    int count;
 } SequenceEncoder;
-
-typedef struct SequenceDecoder {
-
-} SequenceDecoder;
 
 typedef struct ASNEncoder {
     SequenceEncoder* sequence;
 
 } ASNEncoder;
+
+typedef struct SequenceDecoder {
+
+} SequenceDecoder;
 
 ASNEncoder* createEncoder();
 SequenceEncoder* encodeSequence(SequenceEncoder* encoder);
